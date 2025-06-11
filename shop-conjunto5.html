@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>DarkFit Shop - Página de Detalle de Producto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Íconos para dispositivos móviles y favicon -->
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/LOGO.png">
+
+    <!-- Hojas de estilo principales -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Carga de fuentes después de los estilos principales -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Estilos para el carrusel Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+</head>
+
+<body>
+    <!-- Inicio de la Barra Superior (Top Nav) -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:stivenmussa25@gmail.com">info@darkfit.com.co</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="https://wa.me/573008765301">300-876-5301</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="noopener noreferrer" aria-label="Facebook - DarkFit Shop" title="Facebook - DarkFit Shop">
+                        <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
+                    </a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram - DarkFit Shop" title="Instagram - DarkFit Shop">
+                        <i class="fab fa-instagram fa-sm fa-fw me-2"></i>
+                    </a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter - DarkFit Shop" title="Twitter - DarkFit Shop">
+                        <i class="fab fa-twitter fa-sm fa-fw me-2"></i>
+                    </a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn - DarkFit Shop" title="LinkedIn - DarkFit Shop">
+                        <i class="fab fa-linkedin fa-sm fa-fw"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de la Barra Superior (Top Nav) -->
+
+    <!-- Inicio del Encabezado (Header) -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logotipo -->
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                <img src="assets/img/LOGO.png" alt="DarkFit Logo" style="height: 150px; width: 150px;">
+            </a>
+
+            <!-- Botón de menú para pantallas pequeñas -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú de navegación -->
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Iconos de acciones (buscar, carrito, usuario) -->
+                <div class="navbar align-self-center d-flex">
+                    <!-- Barra de búsqueda en pantallas pequeñas -->
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Icono de búsqueda para pantallas grandes -->
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+
+                    <!-- Icono del carrito de compras -->
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin del Encabezado (Header) -->
+
+    <!-- Inicio del Modal de Búsqueda -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="modalBusquedaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Buscar...">
+                    <button type="submit" class="input-group-text bg-success text-light" aria-label="Buscar">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Fin del Modal de Búsqueda -->
+
+    <!-- Inicio del Contenido -->
+    <section class="bg-light">
+        <div class="container pb-5">
+            <div class="row">
+                <!-- Columna de la imagen principal del producto -->
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/conjunto.5.jpg" alt="Imagen del producto principal" id="product-detail">
+                    </div>
+                </div> <!-- Cierre de col-lg-5 -->
+
+                <!-- Columna de detalles del producto -->
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2">Conjunto de Top y short</h1>
+                            <p class="h3 py-2">$60.000</p>
+                            <p class="py-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <span class="list-inline-item text-dark">Calificación 4.0</span>
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Marca:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Nike</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Descripción:</h6>
+                            <p>Diseñada para acompañarte en cada movimiento, nuestra ropa activa combina comodidad, funcionalidad y estilo. Perfecta para entrenamientos, actividades al aire libre o para un look casual y deportivo, nuestras prendas están hechas con materiales de alta calidad que permiten libertad de movimiento y transpirabilidad. ¡Siéntete cómodo y con energía durante todo el día con nuestra línea de ropa activa!</p>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Color disponible:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Blanco / Negro / Fuccia</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Especificaciones:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li>1. Material flexible y resistente (poliéster y spandex).</li>
+                                <li>2. Secado rápido para mantener frescura.</li>
+                                <li>3. Diseño ergonómico para máxima movilidad.</li>
+                                <li>4. Ligera y cómoda para todo tipo de ejercicio.</li>
+                                <li>5. Resistente al sudor y antiolor.</li>
+                                <li>6. Disponible en varias tallas y colores.</li>
+                                <li>7. Ideal para gimnasio, running y deportes al aire libre.</li>
+                            </ul>
+
+                            <!-- Formulario de compra -->
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <!-- Tamaño del producto -->
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">Tamaño:
+                                                <input type="hidden" name="product-size" id="product-size" value="S">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">S</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">M</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">L</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success btn-size">XL</span></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Cantidad del producto -->
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item text-right">
+                                                Cantidad
+                                                <input type="hidden" name="product-quantity" id="product-quantity" value="1">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>
+                                            <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-success" id="btn-plus">+</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Botones de acción -->
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Comprar</button>
+                                    </div>
+                                    <div class="col d-grid">
+                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- Cierre de col-lg-7 -->
+            </div> <!-- Cierre de row -->
+        </div> <!-- Cierre de container -->
+    </section>
+    <!-- Fin del Contenido -->
+
+    <!-- Inicio Artículo -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Título de la sección Productos Relacionados -->
+            <div class="row text-left p-2 pb-3">
+                <h4>Productos Relacionados</h4>
+            </div>
+
+            <!-- Inicio Contenedor del Carrusel -->
+            <div id="carousel-related-product">
+                <!-- Producto 1 -->
+                <div class="p-2 pb-3">
+                    <div class="product-wap card rounded-0">
+                        <div class="card rounded-0">
+                            <img class="card-img rounded-0 img-fluid" src="assets/img/conjunto.5.jpg" alt="Conjunto Lycra - DarkFit Shop">
+                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-conjunto5.html"><i class="far fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="shop-single.html" class="h3 text-decoration-none">Conjunto de Top y Falda</a>
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <li>M/L/X/XL</li>
+                                <li class="pt-2">
+                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled d-flex justify-content-center mb-1">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                            </ul>
+                            <p class="text-center mb-0">$70.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="p-2 pb-3">
+                    <div class="product-wap card rounded-0">
+                        <div class="card rounded-0">
+                            <img class="card-img rounded-0 img-fluid" src="assets/img/conjunto.4.jpg" alt="Gafas de Sol - DarkFit Shop">
+                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-conjunto4.html"><i class="far fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="shop-single.html" class="h3 text-decoration-none">Conjunto largo</a>
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <li>M/L/X/XL</li>
+                                <li class="pt-2">
+                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled d-flex justify-content-center mb-1">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                            </ul>
+                            <p class="text-center mb-0">$90.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="p-2 pb-3">
+                    <div class="product-wap card rounded-0">
+                        <div class="card rounded-0">
+                            <img class="card-img rounded-0 img-fluid" src="assets/img/conjunto.7.jpg" alt="Conjunto Lycra - DarkFit Shop">
+                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-conjunto7.html"><i class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="shop-single.html" class="h3 text-decoration-none">Conjunto X2 Nike</a>
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <li class="">M/L/X/XL</li>
+                                <li class="pt-2">
+                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled d-flex justify-content-center mb-1">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-mute fa fa-star"></i>
+                                </li>
+                            </ul>
+                            <p class="text-center mb-0">$160.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="p-2 pb-3">
+                    <div class="product-wap card rounded-0">
+                        <div class="card rounded-0">
+                            <img class="card-img rounded-0 img-fluid" src="assets/img/pant.2.jpg" alt="Gafas de sol - DarkFit Shop">
+                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-pant2.html"><i class="far fa-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="shop-single.html" class="h3 text-decoration-none">Pantalon Oversize</a>
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <li>M/L/X/XL</li>
+                                <li class="pt-2">
+                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled d-flex justify-content-center mb-1">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                            </ul>
+                            <p class="text-center mb-0">$80.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INICIO: Pie de página -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">DarkFit Shop</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><i class="fas fa-map-marker-alt fa-fw"></i> Valledupar, Colombia</li>
+                        <li><i class="fa fa-phone fa-fw"></i> <a class="text-decoration-none" href="https://wa.me/573008765301">300-876-5301</a></li>
+                        <li><i class="fa fa-envelope fa-fw"></i> <a class="text-decoration-none" href="mailto:stivenmussa25@gmail.com">info@darkfit.com.co</a></li>
+                    </ul>
+                </div>
+
+                <!-- Enlaces a productos -->
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Pesas</a></li>
+                        <li><a class="text-decoration-none" href="#">Ropa deportiva</a></li>
+                        <li><a class="text-decoration-none" href="#">Oversize</a></li>
+                        <li><a class="text-decoration-none" href="#">Suplementos</a></li>
+                        <li><a class="text-decoration-none" href="#">Prendas Populares</a></li>
+                        <li><a class="text-decoration-none" href="#">Accesorios de gimnasio</a></li>
+                        <li><a class="text-decoration-none" href="#">Zapatos deportivos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Información adicional -->
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Más información</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="#">Sobre nosotros</a></li>
+                        <li><a class="text-decoration-none" href="#">Ubicaciones</a></li>
+                        <li><a class="text-decoration-none" href="#">Preguntas frecuentes</a></li>
+                        <li><a class="text-decoration-none" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección de redes sociales y suscripción -->
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a rel="nofollow noopener" class="text-light text-decoration-none" target="_blank" href="http://fb.com/templatemo" aria-label="Facebook" title="Facebook">
+                                <i class="fab fa-facebook-f fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a rel="nofollow noopener" class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/" aria-label="Instagram" title="Instagram">
+                                <i class="fab fa-instagram fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a rel="nofollow noopener" class="text-light text-decoration-none" target="_blank" href="https://twitter.com/" aria-label="Twitter" title="Twitter">
+                                <i class="fab fa-twitter fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a rel="nofollow noopener" class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/" aria-label="LinkedIn" title="LinkedIn">
+                                <i class="fab fa-linkedin fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Formulario de suscripción simple -->
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Dirección de correo electrónico</label>
+                    <div class="input-group mb-2">
+                        <input type="email" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Dirección de correo electrónico" aria-label="Correo electrónico para suscripción">
+                        <div class="input-group-text btn-success text-light" role="button" tabindex="0">Suscribirse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Créditos del footer -->
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            © 2025 Reto 1 | Diseñado por Grupo Reto
+                            <a rel="sponsored noopener" href="https://github.com/CarlitosGG7/Reto-1---Proyecto" target="_blank">Talento Tech</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN: Pie de página -->
+
+    <!-- INICIO: Scripts -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- FIN: Scripts -->
+
+    <!-- Start Slider Script -->
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+        $('#carousel-related-product').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 3,
+            dots: true,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3
+                    }
+                }
+            ]
+        });
+    </script>
+    <!-- End Slider Script -->
+</body>
+</html>

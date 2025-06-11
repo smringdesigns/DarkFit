@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>DarkFit - Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/LOGO.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/LOGO.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Tipografía y estilos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+
+<body>
+    <!-- Barra superior -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:stivenmussa25@gmail.com">info@darkfit.com.co</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="https://wa.me/573008765301">300-876-5301</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
+                    </a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-sm fa-fw me-2"></i>
+                    </a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fab fa-twitter fa-sm fa-fw me-2"></i>
+                    </a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin fa-sm fa-fw"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menú principal -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                <img src="assets/img/LOGO.png" alt="Logo DarkFit" style="height: 150px;">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav">
+                <span class="navbar-toggler-icon"></span>
+                <span class="visually-hidden">Abrir menú de navegación</span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar...">
+                            <div class="input-group-text"><i class="fa fa-fw fa-search"></i></div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span class="badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal de búsqueda -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" name="q" placeholder="Buscar...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Banner principal -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_1.png" alt="Imagen 1">
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1 text-success">Bienvenido a <b>DarkFit Shop</b></h1>
+                                <h3 class="h2">Tu espacio para comprar con estilo</h3>
+                                <p>
+                                    Explora una experiencia de compra única con productos seleccionados especialmente para ti. 
+                                    Calidad, estilo y buen precio en un solo lugar. ¡Haz clic y descubre lo nuevo de la temporada!
+                                   <br> <a href="#category" class="btn btn-success btn-lg mt-3"> Explorar categorías</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_2.png" alt="Imagen 2">
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Nueva temporada, un nuevo tú</h1>
+                                <h3 class="h2">Colecciones 2025 ya disponibles.</h3>
+                                <p>
+                                   Inspírate con lo más reciente en moda y accesorio. Encuentra tu estilo entre nuestras novedades y luce como nunca.
+                                   <strong>¡Empieza a explorar!</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./assets/img/banner_3.png" alt="Imagen 3">
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Compra fácil, recibe rápido</h1>
+                                <h3 class="h2">Envíos seguros a todo el país</h3>
+                                <p>
+                                    Realiza tus pedidos con confianza.  
+                                    Nuestro sistema de entrega asegura rapidez, seguimiento y satisfacción garantizada.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles del carrusel -->
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            <span class="visually-hidden">Siguiente</span>
+        </a>
+    </div>
+
+<!-- INICIO: Categorías del mes -->
+<section class="container py-5">
+    <div class="row text-center pt-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="category">Categorías del mes</h1>
+            <p>
+                <strong>Ropa deportiva con estilo y rendimiento.</strong>
+                Encuentra sudaderas, camisetas, zapatos, mochilas y más para entrenar con comodidad y actitud. ¡Vive tu pasión por el deporte con nosotros!
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Categoría: Ropa Gym -->
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#">
+                <img src="./assets/img/RopaGym.png" class="rounded-circle img-fluid border" alt="Imagen de Ropa Gym">
+            </a>
+            <h5 class="text-center mt-3 mb-3">Ropa de Gym</h5>
+            <p class="text-center">
+                <a class="btn btn-success" href="#">Comprar</a>
+            </p>
+        </div>
+        <!-- Categoría: Zapatos -->
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#">
+                <img src="./assets/img/ZapatosDeportivos.png" class="rounded-circle img-fluid border" alt="Imagen de Zapatos">
+            </a>
+            <h5 class="text-center mt-3 mb-3">Zapatos</h5>
+            <p class="text-center">
+                <a class="btn btn-success" href="#">Comprar</a>
+            </p>
+        </div>
+        <!-- Categoría: Accesorios -->
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#">
+                <img src="./assets/img/Accesorios.png" class="rounded-circle img-fluid border" alt="Imagen de Accesorios">
+            </a>
+            <h5 class="text-center mt-3 mb-3">Accesorios</h5>
+            <p class="text-center">
+                <a class="btn btn-success" href="#">Comprar</a>
+            </p>
+        </div>
+    </div>
+</section>
+<!-- FIN: Categorías del mes -->
+
+
+<!-- INICIO: Productos destacados -->
+<section class="bg-light">
+    <div class="container py-5">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Lo mejor del mes para tu entrenamiento.</h1>
+                <p>Descubre nuestros productos estrella elegidos por su calidad, estilo y preferencia de nuestros clientes. ¡Haz que tu rutina brille con lo mejor del deporte!</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="shop-single.html">
+                        <img src="./assets/img/pesas.png" class="card-img-top" alt="Gym Weight">
+                    </a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li>
+                                <!-- Calificación: 3 estrellas -->
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-muted fa fa-star"></i>
+                                <i class="text-muted fa fa-star"></i>
+                            </li>
+                        </ul>
+                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Pesas de Gimnasio</a>
+                        <p class="card-text">Alta resistencia y diseño ergonómico para tus entrenamientos.</p>
+                        <p class="text-muted">Reseñas (24)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="shop-single.html">
+                        <img src="./assets/img/Zapatos.png" class="card-img-top" alt="Cloud Nike Shoes">
+                    </a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li>
+                                <!-- Calificación: 3 estrellas -->
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-muted fa fa-star"></i>
+                                <i class="text-muted fa fa-star"></i>
+                            </li>
+                            <li class="text-muted text-right">$739.950</li>
+                        </ul>
+                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Zapatos Nike Free Metcon 6</a>
+                        <p class="card-text">Comodidad y estilo para correr o vestir.</p>
+                        <p class="text-muted">Reseñas (48)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="shop-single.html">
+                        <img src="./assets/img/Zapatos2.png" class="card-img-top" alt="Addides Shoes">
+                    </a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li>
+                                <!-- Calificación: 5 estrellas -->
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                            </li>
+                            <li class="text-muted text-right">$364.950</li>
+                        </ul>
+                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Zapatos Adidas Verano</a>
+                        <p class="card-text">Ideales para caminatas o uso diario, frescos y livianos.</p>
+                        <p class="text-muted">Reseñas (74)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FIN: Productos destacados -->
+
+<!-- INICIO: Pie de página -->
+<footer class="bg-dark" id="tempaltemo_footer">
+    <div class="container">
+        <div class="row">
+            <!-- Información de contacto -->
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-success border-bottom pb-3 border-light logo">DarkFit Shop</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Valledupar, Colombia</li>
+                    <li><i class="fa fa-phone fa-fw"></i> <a class="text-decoration-none" href="https://wa.me/573008765301">300-876-5301</a></li>
+                    <li><i class="fa fa-envelope fa-fw"></i> <a class="text-decoration-none" href="mailto:stivenmussa25@gmail.com">info@darkfit.com.co</a></li>
+                </ul>
+            </div>
+
+            <!-- Enlaces a productos -->
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><a class="text-decoration-none" href="#">Lujo</a></li>
+                    <li><a class="text-decoration-none" href="#">Ropa deportiva</a></li>
+                    <li><a class="text-decoration-none" href="#">Zapatos para hombre</a></li>
+                    <li><a class="text-decoration-none" href="#">Zapatos para mujer</a></li>
+                    <li><a class="text-decoration-none" href="#">Vestidos populares</a></li>
+                    <li><a class="text-decoration-none" href="#">Accesorios de gimnasio</a></li>
+                    <li><a class="text-decoration-none" href="#">Zapatos deportivos</a></li>
+                </ul>
+            </div>
+
+            <!-- Información adicional -->
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Más información</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><a class="text-decoration-none" href="#">Inicio</a></li>
+                    <li><a class="text-decoration-none" href="#">Sobre nosotros</a></li>
+                    <li><a class="text-decoration-none" href="#">Ubicaciones</a></li>
+                    <li><a class="text-decoration-none" href="#">Preguntas frecuentes</a></li>
+                    <li><a class="text-decoration-none" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+         <!-- Sección de redes sociales y suscripción -->
+        <div class="row text-light mb-4">
+            <div class="col-12 mb-3">
+                <!-- Línea divisoria -->
+                <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+            <div class="col-auto me-auto">
+                <!-- Íconos de redes sociales con estilo circular y borde -->
+                <ul class="list-inline text-left footer-icons">
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a rel="nofollow noopener" class="text-light text-decoration-none" target="_blank" href="http://fb.com/templatemo" aria-label="Facebook" title="Facebook">
+                            <i class="fab fa-facebook-f fa-lg fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a rel="nofollow noopener" class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/" aria-label="Instagram" title="Instagram">
+                            <i class="fab fa-instagram fa-lg fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a rel="nofollow noopener" class="text-light text-decoration-none" target="_blank" href="https://twitter.com/" aria-label="Twitter" title="Twitter">
+                            <i class="fab fa-twitter fa-lg fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a rel="nofollow noopener" class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fab fa-linkedin fa-lg fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Formulario de suscripción simple -->
+            <div class="col-auto">
+                <label class="sr-only" for="subscribeEmail">Dirección de correo electrónico</label>
+                <div class="input-group mb-2">
+                    <input type="email" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Dirección de correo electrónico" aria-label="Correo electrónico para suscripción">
+                    <div class="input-group-text btn-success text-light" role="button" tabindex="0">Suscribirse</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Créditos del footer -->
+    <div class="w-100 bg-black py-3">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-12">
+                    <p class="text-left text-light">
+                        © 2025 Reto 1 | Diseñado por Grupo 1 Reto
+                        <a rel="sponsored noopener" href="https://github.com/CarlitosGG7/Reto-1---Proyecto" target="_blank">Talento Tech</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FIN: Pie de página -->
+
+<!-- INICIO: Scripts -->
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/templatemo.js"></script>
+<script src="assets/js/custom.js"></script>
+<!-- FIN: Scripts -->
+
+</body>
+</html>
